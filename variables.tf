@@ -6,7 +6,7 @@ variable "subscription_id" {
 variable "location" {
     type = string
     description = "The Azure region to deploy resources"
-    default = "Central US"
+    default = "East US 2"
 }
 
 variable "project" {
@@ -26,7 +26,7 @@ variable "tags" {
     description = "A map of tags to apply to all resources"
     default = {
         environment = "development"
-        date = "apr-2025"
+        date = "nov-2025"
         createdBy = "Terraform"
     }
 }
