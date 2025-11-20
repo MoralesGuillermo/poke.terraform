@@ -12,4 +12,8 @@ resource "azurerm_linux_function_app" "serverless1" {
       python_version = "3.11"  # Indica la versión de Python deseada
     }
   }
+
+  lifecycle {
+    ignore_changes = all
+  }
 }

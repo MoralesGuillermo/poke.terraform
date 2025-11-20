@@ -22,11 +22,16 @@ resource "azurerm_linux_web_app" "webappui" {
         }
     }
 
+
+
     app_settings = {
         WEBSITES_PORT = "80"
     }
 
     tags = var.tags
+    lifecycle {
+        ignore_changes = all
+    }
 
 }
 
@@ -49,4 +54,8 @@ resource "azurerm_linux_web_app" "webappapi" {
     }
 
     tags = var.tags
+
+    lifecycle {
+        ignore_changes = all
+    }
 }
