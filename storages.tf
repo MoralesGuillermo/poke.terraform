@@ -29,3 +29,8 @@ resource "azurerm_storage_queue" "q1" {
     name = "requests"
     storage_account_name = azurerm_storage_account.saccount.name
 }
+
+resource "azurerm_storage_queue" "q2" {
+    name = "deletedreports"
+    storage_account_name = azurerm_storage_account.saccount.name
+}
